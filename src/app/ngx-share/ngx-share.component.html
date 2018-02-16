@@ -1,0 +1,62 @@
+<div class="container">
+      <div class="mb-3">
+        <h4 class="font-weight-bold"> Basic share button </h4>
+        <button mat-button shareButton="facebook" [sbUrl]='ab'>
+          <i class="fa fa-facebook"></i>
+        </button>
+        <button mat-raised-button shareButton="twitter" [sbUrl]='ab'>
+          <i class="fa fa-twitter"></i>
+        </button>
+        <button mat-icon-button shareButton="linkedin" [sbUrl]='ab' [title]='title'>
+          <i class="fa fa-linkedin"></i>
+        </button>
+        <button mat-fab shareButton="pinterest" [sbUrl]='ab'>
+          <i class="fa fa-pinterest-p"></i>
+        </button>
+      </div>
+
+
+      <div class="mb-3">
+          <h4 class="font-weight-bold">  official colors and icons  </h4>
+        <button mat-fab shareButton="facebook" [style.backgroundColor]="share.prop.facebook.color">
+          <i [class]="share.prop.facebook.icon"></i>
+        </button>
+        <button mat-fab shareButton="twitter" [style.backgroundColor]="share.prop.twitter.color">
+          <i [class]="share.prop.twitter.icon"></i>
+        </button>
+        <button mat-fab shareButton="linkedin" [style.backgroundColor]="share.prop.linkedin.color">
+          <i [class]="share.prop.linkedin.icon"></i>
+        </button>
+        <button mat-fab shareButton="whatsapp" [style.backgroundColor]="share.prop.whatsapp.color">
+          <i [class]="share.prop.whatsapp.icon"></i>
+        </button>
+        <button mat-fab shareButton="telegram" [style.backgroundColor]="share.prop.telegram.color">
+          <i [class]="share.prop.telegram.icon"></i>
+        </button>
+        <button mat-fab shareButton="pinterest" [style.backgroundColor]="share.prop.pinterest.color">
+          <i [class]="share.prop.pinterest.icon"></i>
+        </button>
+      </div>
+
+      <div>
+          <h4 class="font-weight-bold"> More colors and icons  </h4>
+          <button mat-icon-button shareButton="facebook" [style.color]="share.prop.facebook.color">
+              <i [class]="share.prop.facebook.icon"></i>
+            </button>
+            <button mat-icon-button shareButton="twitter" [style.color]="share.prop.twitter.color">
+              <i [class]="share.prop.twitter.icon"></i>
+            </button>
+            <button mat-icon-button shareButton="linkedin" [style.color]="share.prop.linkedin.color">
+              <i [class]="share.prop.linkedin.icon"></i>
+            </button>
+            <button mat-icon-button shareButton="whatsapp" [style.color]="share.prop.whatsapp.color">
+              <i [class]="share.prop.whatsapp.icon"></i>
+            </button>
+            <button mat-icon-button shareButton="telegram" [style.color]="share.prop.telegram.color">
+              <i [class]="share.prop.telegram.icon"></i>
+            </button>
+            <button mat-icon-button shareButton="pinterest" [style.color]="share.prop.pinterest.color">
+              <i [class]="share.prop.pinterest.icon"></i>
+            </button>
+      </div>
+</div>
